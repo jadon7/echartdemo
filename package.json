@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "build:gh": "tsc && vite build --base=echarts-www-landing-animation --config gh/vite.config.ts",
+    "build:gh": "tsc && vite build --base=/echartdemo/ --config gh/vite.config.ts",
     "serve": "vite preview",
     "prepublishOnly": "npm run build"
   },
