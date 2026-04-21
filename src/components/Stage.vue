@@ -45,9 +45,6 @@
         />
       </svg>
     </div>
-    <div id="stage-title" :style="currentScene?.getTitleStyle() || ''">
-      {{ currentScene?.getTitle() || '' }}
-    </div>
   </div>
 </template>
 
@@ -232,22 +229,6 @@ defineExpose({
   top: 0;
   height: 100%;
   width: 100%;
-}
-
-#stage-title {
-  position: absolute;
-  left: 20px;
-  bottom: 30px;
-  font-size: 30px;
-
-  transition: linear 200ms color;
-
-  z-index: 1;
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
-#stage-main.dark #stage-title {
-  color: #fff;
 }
 
 #timeline {
